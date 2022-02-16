@@ -1,15 +1,30 @@
 import './App.css';
-import CatData from './CatData'
-import DogData from './DogData'
+import 'bootstrap'
+import * as bootstrap from 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {useState, useEffect} from 'react'
+import {Route, Link, Routes, Navigate} from "react-router-dom"
+import DogAdoption from './DogAdoption/DogAdoption'
+import CatAdoption from './CatAdoption/CatAdoption'
+import Home from './Home/Home'
 
-console.log(CatData)
 
 function App() {
+
+
   return (
     <div>
       <h1>Forever Friend</h1>
-      <h2>Cat Data Test: {CatData[0].name}</h2>
-      <h2>Dog Data Test: {DogData[0].name}</h2>
+      <Link to="/">Home</Link>
+      <Link to="/dogadoption">Dog Adoption</Link> 
+      <Link to="/catadoption">Cat Adoption</Link>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/dogadoption" element={<DogAdoption />} />
+          <Route path="/catadoption" element={<CatAdoption />} />
+        </Routes>
+      </main>
     </div>
   );
 }
