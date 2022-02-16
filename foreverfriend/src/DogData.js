@@ -10,8 +10,8 @@ const DogData = [
     },
     breeds: {
         mixed: true,
-        primary: "Retriever",
-        secondary: null,
+        primary: "Airedale",
+        urlID: "airedale",
         unknown: false
     },
     contact: {
@@ -50,8 +50,8 @@ const DogData = [
     },
     breeds: {
         mixed: true,
-        primary: "Mastiff",
-        secondary: null,
+        primary: "Beagle",
+        urlID: "beagle",
         unknown: false
     },
     contact: {
@@ -90,8 +90,8 @@ const DogData = [
     },
     breeds: {
         mixed: true,
-        primary: "German Shepherd",
-        secondary: "Catahoula Leopard Dog",
+        primary: "Boxer",
+        urlID: "boxer",
         unknown: false
     },
     contact: {
@@ -130,8 +130,8 @@ const DogData = [
     },
     breeds: {
         mixed: true,
-        primary: "German Shepherd",
-        secondary: "Terrier",
+        primary: "Boston Bulldog",
+        urlID: "bulldog/boston",
         unknown: false
     },
     contact: {
@@ -170,8 +170,8 @@ const DogData = [
     },
     breeds: {
         mixed: false,
-        primary: "Mixed",
-        secondary: null,
+        primary: "Mix",
+        urlID: "mix",
         unknown: true 
     },
     contact: {
@@ -211,7 +211,7 @@ const DogData = [
     breeds: {
         mixed: false,
         primary: "English Bulldog",
-        secondary: null,
+        urlID: "bulldog/english",
         unknown: false
     },
     contact: {
@@ -250,8 +250,8 @@ const DogData = [
     },
     breeds: {
         mixed: false,
-        primary: "Boston Terrier",
-        secondary: null,
+        primary: "Fox Terrier",
+        urlID: "terrier/fox",
         unknown: false
     },
     contact: {
@@ -290,8 +290,8 @@ const DogData = [
     },
     breeds: {
         mixed: true,
-        primary: "Labrador Retriever",
-        secondary: "Hound",
+        primary: "Weimaraner",
+        urlID: "weimaraner",
         unknown: false
     },
     contact: {
@@ -330,8 +330,8 @@ const DogData = [
     },
     breeds: {
         mixed: true,
-        primary: "Beagle",
-        secondary: "Australian Shepherd",
+        primary: "Australian Shepherd",
+        urlID: "australian/shepherd",
         unknown: false
     },
     contact: {
@@ -371,7 +371,7 @@ const DogData = [
     breeds: {
         mixed: true,
         primary: "Chihuahua",
-        secondary: null,
+        urlID: "chihuahua",
         unknown: false
     },
     contact: {

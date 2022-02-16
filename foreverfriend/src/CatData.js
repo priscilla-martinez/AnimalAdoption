@@ -11,8 +11,8 @@ const CatData = [
         }, 
         breeds: {
             mixed: false,
-            primary: "Domestic Short Hair",
-            secondary: null, 
+            primary: "Abyssinian",
+            urlID: "abys", 
             unkown: false
         }, 
         contact: {
@@ -51,8 +51,8 @@ const CatData = [
         }, 
         breeds: {
             mixed: false, 
-            primary: "Domestic Short Hair", 
-            secondary: null, 
+            primary: "American Bobtail", 
+            urlID: "abob", 
             unkown: false
         },  
         contact: {
@@ -91,8 +91,8 @@ const CatData = [
         }, 
         breeds: {
             mixed: false, 
-            primary: "Domestic Short Hair", 
-            secondary: null, 
+            primary: "American Wirehair", 
+            urlID: "awir", 
             unkown: false
         }, 
         contact: {
@@ -131,8 +131,8 @@ const CatData = [
         }, 
         breeds: {
             mixed: false, 
-            primary: "Domestic Medium Hair", 
-            secondary: null, 
+            primary: "Balinese", 
+            urlID: "bali", 
             unkown: false
         },
         contact: {
@@ -171,8 +171,8 @@ const CatData = [
         }, 
         breeds: {
             mixed: false, 
-            primary: "Domestic Short Hair", 
-            secondary: null, 
+            primary: "Bengal", 
+            urlID: "beng", 
             unkown: false 
         },  
         contact: {
@@ -211,8 +211,8 @@ const CatData = [
         }, 
         breeds: {
             mixed: false, 
-            primary: "Domestic Short Hair", 
-            secondary: null, 
+            primary: "Bombay", 
+            urlID: "bomb", 
             unkown: false
         }, 
         contact: {
@@ -251,8 +251,8 @@ const CatData = [
         }, 
         breeds: {
             mixed: false, 
-            primary: "Domestic Short Hair", 
-            secondary: null, 
+            primary: "British Shorthair", 
+            urlID: "bsho", 
             unkown: false
         }, 
         contact: {
@@ -291,8 +291,8 @@ const CatData = [
         }, 
         breeds: {
             mixed: false, 
-            primary: "Domestic Long Hair", 
-            secondary: null, 
+            primary: "Burmilla", 
+            urlID: "buri", 
             unkown: false
         },
         contact: {
@@ -331,8 +331,8 @@ const CatData = [
         }, 
         breeds: {
             mixed: false, 
-            primary: "Domestic Short Hair", 
-            secondary: null, 
+            primary: "Chantilly-Tiffany", 
+            urlID: "ctif", 
             unkown: false
         }, 
         contact: {
@@ -371,8 +371,8 @@ const CatData = [
         }, 
         breeds: {
             mixed: true, 
-            primary: "Domestic Short Hair", 
-            secondary: null, 
+            primary: "Chausie", 
+            urlID: "chau", 
             unkown: false
         }, 
         contact: {
@@ -397,458 +397,7 @@ const CatData = [
         name: "Skittles",
         size: "Medium", 
         species: "Cat"
-    },
-
-/*10. 
-    {
-        age: "",
-        attributes: {
-            declawed: ,
-            house_trained: ,
-            shots_current: ,
-            spayed_neutured: ,
-            special_needs: 
-        }, 
-        breeds: {
-            mixed: , 
-            primary: "", 
-            secondary: , 
-            unkown: 
-        }, 
-        coat: , 
-        colors: {
-            primary: ,
-            secondary: ,
-            tertiary: ,
-        }, 
-        contact: {
-            address: {
-                address1: "",
-                address2: , 
-                city: "",
-                country: "",
-                postcode: "",
-                state: ""
-            },
-            email: ,
-            phone:
-        }, 
-        environment: {
-            cats: ,
-            children: ,
-            dogs: ,
-        }, 
-        gender: , 
-        id: ,
-        name: ,
-        size: , 
-        species: "Cat"
-    },
-
-    {
-        age: "",
-        attributes: {
-            declawed: ,
-            house_trained: ,
-            shots_current: ,
-            spayed_neutured: ,
-            special_needs: 
-        }, 
-        breeds: {
-            mixed: , 
-            primary: "", 
-            secondary: , 
-            unkown: 
-        }, 
-        coat: , 
-        colors: {
-            primary: ,
-            secondary: ,
-            tertiary: ,
-        }, 
-        contact: {
-            address: {
-                address1: "",
-                address2: , 
-                city: "",
-                country: "",
-                postcode: "",
-                state: ""
-            },
-            email: ,
-            phone:
-        }, 
-        environment: {
-            cats: ,
-            children: ,
-            dogs: ,
-        }, 
-        gender: , 
-        id: ,
-        name: ,
-        size: , 
-        species: "Cat"
-    },
-
-    {
-        age: "",
-        attributes: {
-            declawed: ,
-            house_trained: ,
-            shots_current: ,
-            spayed_neutured: ,
-            special_needs: 
-        }, 
-        breeds: {
-            mixed: , 
-            primary: "", 
-            secondary: , 
-            unkown: 
-        }, 
-        coat: , 
-        colors: {
-            primary: ,
-            secondary: ,
-            tertiary: ,
-        }, 
-        contact: {
-            address: {
-                address1: "",
-                address2: , 
-                city: "",
-                country: "",
-                postcode: "",
-                state: ""
-            },
-            email: ,
-            phone:
-        }, 
-        environment: {
-            cats: ,
-            children: ,
-            dogs: ,
-        }, 
-        gender: , 
-        id: ,
-        name: ,
-        size: , 
-        species: "Cat"
-    },
-
-    {
-        age: "",
-        attributes: {
-            declawed: ,
-            house_trained: ,
-            shots_current: ,
-            spayed_neutured: ,
-            special_needs: 
-        }, 
-        breeds: {
-            mixed: , 
-            primary: "", 
-            secondary: , 
-            unkown: 
-        }, 
-        coat: , 
-        colors: {
-            primary: ,
-            secondary: ,
-            tertiary: ,
-        }, 
-        contact: {
-            address: {
-                address1: "",
-                address2: , 
-                city: "",
-                country: "",
-                postcode: "",
-                state: ""
-            },
-            email: ,
-            phone:
-        }, 
-        environment: {
-            cats: ,
-            children: ,
-            dogs: ,
-        }, 
-        gender: , 
-        id: ,
-        name: ,
-        size: , 
-        species: "Cat"
-    },
-
-    {
-        age: "",
-        attributes: {
-            declawed: ,
-            house_trained: ,
-            shots_current: ,
-            spayed_neutured: ,
-            special_needs: 
-        }, 
-        breeds: {
-            mixed: , 
-            primary: "", 
-            secondary: , 
-            unkown: 
-        }, 
-        coat: , 
-        colors: {
-            primary: ,
-            secondary: ,
-            tertiary: ,
-        }, 
-        contact: {
-            address: {
-                address1: "",
-                address2: , 
-                city: "",
-                country: "",
-                postcode: "",
-                state: ""
-            },
-            email: ,
-            phone:
-        }, 
-        environment: {
-            cats: ,
-            children: ,
-            dogs: ,
-        }, 
-        gender: , 
-        id: ,
-        name: ,
-        size: , 
-        species: "Cat"
-    },
-
-    {
-        age: "",
-        attributes: {
-            declawed: ,
-            house_trained: ,
-            shots_current: ,
-            spayed_neutured: ,
-            special_needs: 
-        }, 
-        breeds: {
-            mixed: , 
-            primary: "", 
-            secondary: , 
-            unkown: 
-        }, 
-        coat: , 
-        colors: {
-            primary: ,
-            secondary: ,
-            tertiary: ,
-        }, 
-        contact: {
-            address: {
-                address1: "",
-                address2: , 
-                city: "",
-                country: "",
-                postcode: "",
-                state: ""
-            },
-            email: ,
-            phone:
-        }, 
-        environment: {
-            cats: ,
-            children: ,
-            dogs: ,
-        }, 
-        gender: , 
-        id: ,
-        name: ,
-        size: , 
-        species: "Cat"
-    },
-
-    {
-        age: "",
-        attributes: {
-            declawed: ,
-            house_trained: ,
-            shots_current: ,
-            spayed_neutured: ,
-            special_needs: 
-        }, 
-        breeds: {
-            mixed: , 
-            primary: "", 
-            secondary: , 
-            unkown: 
-        }, 
-        coat: , 
-        colors: {
-            primary: ,
-            secondary: ,
-            tertiary: ,
-        }, 
-        contact: {
-            address: {
-                address1: "",
-                address2: , 
-                city: "",
-                country: "",
-                postcode: "",
-                state: ""
-            },
-            email: ,
-            phone:
-        }, 
-        environment: {
-            cats: ,
-            children: ,
-            dogs: ,
-        }, 
-        gender: , 
-        id: ,
-        name: ,
-        size: , 
-        species: "Cat"
-    },
-
-    {
-        age: "",
-        attributes: {
-            declawed: ,
-            house_trained: ,
-            shots_current: ,
-            spayed_neutured: ,
-            special_needs: 
-        }, 
-        breeds: {
-            mixed: , 
-            primary: "", 
-            secondary: , 
-            unkown: 
-        }, 
-        coat: , 
-        colors: {
-            primary: ,
-            secondary: ,
-            tertiary: ,
-        }, 
-        contact: {
-            address: {
-                address1: "",
-                address2: , 
-                city: "",
-                country: "",
-                postcode: "",
-                state: ""
-            },
-            email: ,
-            phone:
-        }, 
-        environment: {
-            cats: ,
-            children: ,
-            dogs: ,
-        }, 
-        gender: , 
-        id: ,
-        name: ,
-        size: , 
-        species: "Cat"
-    },
-
-    {
-        age: "",
-        attributes: {
-            declawed: ,
-            house_trained: ,
-            shots_current: ,
-            spayed_neutured: ,
-            special_needs: 
-        }, 
-        breeds: {
-            mixed: , 
-            primary: "", 
-            secondary: , 
-            unkown: 
-        }, 
-        coat: , 
-        colors: {
-            primary: ,
-            secondary: ,
-            tertiary: ,
-        }, 
-        contact: {
-            address: {
-                address1: "",
-                address2: , 
-                city: "",
-                country: "",
-                postcode: "",
-                state: ""
-            },
-            email: ,
-            phone:
-        }, 
-        environment: {
-            cats: ,
-            children: ,
-            dogs: ,
-        }, 
-        gender: , 
-        id: ,
-        name: ,
-        size: , 
-        species: "Cat"
-    },
-
-    {
-        age: "",
-        attributes: {
-            declawed: ,
-            house_trained: ,
-            shots_current: ,
-            spayed_neutured: ,
-            special_needs: 
-        }, 
-        breeds: {
-            mixed: , 
-            primary: "", 
-            secondary: , 
-            unkown: 
-        }, 
-        coat: , 
-        colors: {
-            primary: ,
-            secondary: ,
-            tertiary: ,
-        }, 
-        contact: {
-            address: {
-                address1: "",
-                address2: , 
-                city: "",
-                country: "",
-                postcode: "",
-                state: ""
-            },
-            email: ,
-            phone:
-        }, 
-        environment: {
-            cats: ,
-            children: ,
-            dogs: ,
-        }, 
-        gender: , 
-        id: ,
-        name: ,
-        size: , 
-        species: "Cat"
-    }, */
+    }
     ]
     
     export default CatData
