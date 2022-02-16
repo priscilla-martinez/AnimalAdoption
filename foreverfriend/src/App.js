@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import CatData from './CatData'
+import DogData from './DogData'
+
+console.log(CatData)
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Forever Friend</h1>
+      <h2>Cat Data Test: {CatData[0].name}</h2>
+      <h2>Dog Data Test: {DogData[0].name}</h2>
     </div>
   );
 }
