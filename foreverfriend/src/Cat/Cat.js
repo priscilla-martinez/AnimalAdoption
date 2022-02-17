@@ -11,6 +11,7 @@ function Cat(){
             <>
                 <h1>{data.name}</h1>
                 <h2>{data.breeds.primary}</h2>
+                <h3>{data.description}</h3>
             </>
         );
     })

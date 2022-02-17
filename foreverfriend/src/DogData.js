@@ -26,7 +26,7 @@ const DogData = [
         email: "cchsshelter@embarqmail.com", 
         phone: "(252) 247-7744"
     },
-    description: "Meet this cutie named Sylvie! She came into the shelter February 2022 and is patiently awaiting her chance at her...",
+    description: "Praesent quis molestie dui, vel faucibus justo. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
     environment: {
         cats: true,
         children: true,
@@ -66,7 +66,7 @@ const DogData = [
         email: "slpersad@comcast.net", 
         phone: "(304) 267-8389"
     },
-    description: "Turner is 1 year old Mastiff mix. He is good with other dogs but we don’t know how he would...",
+    description: "Donec libero nunc, condimentum sed cursus quis, auctor nec diam.",
     environment: {
         cats: false,
         children: false,
@@ -106,7 +106,7 @@ const DogData = [
         email: "peachcountyanimalrescue@gmail.com", 
         phone: null
     },
-    description: "Name: Charlie Mae  Sex: Female  Breed: German Shepherd/Catahoula Mix  Age: 2 Years as of Feb 2022  Weight: 60 lbs  Good...",
+    description: "Sed vulputate suscipit massa laoreet pharetra. Praesent lobortis ex eget scelerisque facilisis. Nulla non tortor pellentesque, faucibus quam in, imperdiet lectus.",
     environment: {
         cats: true,
         children: true,
@@ -146,7 +146,7 @@ const DogData = [
         email: "doxiemama4@gmail.com", 
         phone: "(928) 778-2924"
     },
-    description: "Roxanne is an adorable mix of German Shepherd and Terrier, making her smart and eager to learn. She is about...",
+    description: "Sed quis accumsan purus, vel dictum lorem. Fusce id dolor eleifend, viverra diam id, facilisis sapien.",
     environment: {
         cats: false,
         children: true,
@@ -186,7 +186,7 @@ const DogData = [
         email: "adopt@hihs.org", 
         phone: "(808) 329-8002"
     },
-    description: "NEEDS UPDATING",
+    description: "Nullam ut elementum tortor. Praesent ut lacus risus. Nulla commodo nibh vitae elementum laoreet.",
     environment: {
         cats: true,
         children: false,
@@ -226,7 +226,7 @@ const DogData = [
         email: "sohhs417@gmail.com", 
         phone: "(417) 337-7387"
     },
-    description: "",
+    description: "Nam non commodo elit. Vestibulum rhoncus, neque vitae suscipit mollis, augue leo malesuada velit, sed semper mi quam sit amet risus.",
     environment: {
         cats: true,
         children: true,
@@ -266,7 +266,7 @@ const DogData = [
         email: "btrescue@texasbostons.com", 
         phone: "(844) 428-7776"
     },
-    description: "Hi there! My name is Charlie, and I am about 3 years old and around 24 lbs. I am a...",
+    description: "Cras iaculis lacus non quam convallis, non dictum dolor fermentum. Sed at urna neque. Vestibulum vitae quam pellentesque, suscipit turpis vitae, varius magna.",
     environment: {
         cats: true,
         children: true,
@@ -306,7 +306,7 @@ const DogData = [
         email: "adoptions@adoptadog.org", 
         phone: "(914) 273-1674"
     },
-    description: "THANK YOU FOR YOUR INTEREST IN ADOPTING ONE OF OUR AMAZING RESCUE DOGS - WE CAN’T WAIT TO HELP YOU...",
+    description: "Donec dignissim pulvinar ligula, a malesuada ex tristique et. Quisque pulvinar erat ac lectus accumsan, nec feugiat nunc auctor. Vivamus ut aliquam lorem.",
     environment: {
         cats: true,
         children: true,
@@ -346,7 +346,7 @@ const DogData = [
         email: "northmeckclt@gmail.com", 
         phone: null
     },
-    description: "Wren is an absolutely precious pup. She is spunky, playful, and happy. We believe they are a mixture of hound...",
+    description: "Curabitur urna neque, vulputate id finibus sit amet, pharetra id odio. Curabitur rhoncus mi eu arcu sollicitudin bibendum.",
     environment: {
         cats: true,
         children: false,
@@ -386,7 +386,7 @@ const DogData = [
         email: "info@safewithusanimalrescue.org", 
         phone: null
     },
-    description: "Meet Charles! Charles is both blind and deaf. He was dumped at a city shelter where...",
+    description: "Vivamus interdum consequat eros, at volutpat arcu posuere in. Curabitur quis tincidunt nisi, non placerat nulla.",
     environment: {
         cats: true,
         children: true,

@@ -36,7 +36,8 @@ const CatData = [
         id: 54629306,
         name: "Ike",
         size: "Small", 
-        species: "Cat"
+        species: "Cat",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis purus enim, et pulvinar diam efficitur nec."
     },
 
 // 1. Cat
@@ -76,7 +77,8 @@ const CatData = [
         id: 54629297,
         name: "Cat",
         size: "Medium", 
-        species: "Cat"
+        species: "Cat",
+        description: "Praesent justo nibh, pulvinar at diam eu, consectetur semper elit. Nam ornare quam eget dui pretium mattis ut non orci."
     },
 
 // 2. Bellamy
@@ -116,7 +118,8 @@ const CatData = [
         id: 54629290,
         name: "Bellamy",
         size: "Small", 
-        species: "Cat"
+        species: "Cat",
+        description: "Nam congue condimentum eros, in vehicula orci lobortis quis. Donec lobortis, leo vitae mollis ultrices, nisi arcu placerat ipsum, id rutrum nibh velit mattis magna."
     },
 
 // 3. Moe    
@@ -156,7 +159,8 @@ const CatData = [
         id: 54629292,
         name: "Moe",
         size: "Small", 
-        species: "Cat"
+        species: "Cat",
+        description: "Maecenas eget sagittis urna, a placerat orci. In vitae finibus justo, vel pharetra erat."
     },
 
 // 4. Mara
@@ -196,7 +200,8 @@ const CatData = [
         id: 54629293,
         name: "Mara",
         size: "Small", 
-        species: "Cat"
+        species: "Cat",
+        description: "Cras laoreet dolor turpis, suscipit scelerisque lacus consequat dignissim. Nam ut velit ut leo elementum consequat vel sit amet sem."
     },
 
 // 5. Eve
@@ -236,7 +241,8 @@ const CatData = [
         id: 54629295,
         name: "Eve",
         size: "Small", 
-        species: "Cat"
+        species: "Cat",
+        description: "Nunc non euismod ex. Praesent at sem faucibus, ultrices leo a, hendrerit eros."
     },
 
 // 6. "Baby"
@@ -276,7 +282,8 @@ const CatData = [
         id: 54629283,
         name: "Baby",
         size: "Small", 
-        species: "Cat"
+        species: "Cat",
+        description: "Sed id sem fringilla, mattis tortor vitae, accumsan nibh. Phasellus at justo elementum tellus malesuada dignissim."
     },
 
 //7. Sparky
@@ -316,7 +323,8 @@ const CatData = [
         id: 54629280,
         name: "Sparky",
         size: "Medium", 
-        species: "Cat"
+        species: "Cat",
+        description: "Sed sem odio, scelerisque volutpat purus eget, tristique facilisis ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
     },
 
 //8. Flynn
@@ -356,7 +364,8 @@ const CatData = [
         id: 54629281,
         name: "Flynn",
         size: "Small", 
-        species: "Cat"
+        species: "Cat",
+        description: "Morbi nec interdum ligula. Pellentesque quis lobortis mauris. Vestibulum et pharetra ante, imperdiet accumsan lectus."
     },
 
 //9. Skittles
@@ -396,7 +405,8 @@ const CatData = [
         id: 54629274 ,
         name: "Skittles",
         size: "Medium", 
-        species: "Cat"
+        species: "Cat",
+        description: "Ut et libero suscipit, scelerisque lacus quis, congue quam. Maecenas at diam hendrerit, commodo massa eget, pharetra ante."
     }
     ]
     
