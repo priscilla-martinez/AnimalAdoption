@@ -3,6 +3,7 @@ import DogData from '../DogData'
 import {useState, useEffect} from 'react'
 import 'bootstrap'
 import * as bootstrap from 'bootstrap';
+import { Link } from 'react-router-dom';
 
 function DogAdoption() {
 
@@ -14,21 +15,23 @@ function DogAdoption() {
 
   const [dogImage, setDogImage] = useState({})
 
-  function RandomDog() { 
+  useEffect(()=>{ 
       fetch(fullUrl)
         .then((response) => response.json())
         .then((data) => setDogImage(data.message))
         .catch(() => console.log("oops error"));
 
         console.log(dogImage)
-  }
+    }, []);
 
     return(
         <>
             <h1>Dog Adoption Page</h1>
             <h2>{DogData[3].name}</h2>
             <h3>{DogData[3].breeds.primary}</h3>
-            <button type="button" className="btn btn-primary" onClick={RandomDog}>Dog API Test</button>
+            <button type="button" class="btn btn-light">
+                <Link to={'/dog/' + DogData[0].name}>More Info</Link>
+            </button>            
             <img src={dogImage} />
         </>
     )

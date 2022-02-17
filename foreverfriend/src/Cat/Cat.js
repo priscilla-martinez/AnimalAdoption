@@ -1,4 +1,5 @@
 import { useParams } from 'react-router'
+import CatData from '../CatData'
 
 function Cat(){
     return(
