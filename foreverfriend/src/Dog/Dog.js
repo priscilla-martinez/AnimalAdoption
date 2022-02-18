@@ -10,21 +10,7 @@ function Dog(){
 
     const [dogImage, setDogImage] = useState("")
 
-    const paramDogData = DogData.filter(DogData => DogData.name === dogName)
-
-    let spayedOrNeutered; 
-    if(paramDogData[0].attributes.spayed_neutered===false){
-        spayedOrNeutered = "NO"
-    } else {
-        spayedOrNeutered = "YES"
-    }
-
-    let specialNeeds; 
-    if(paramDogData[0].attributes.spayed_neutered===false){
-        specialNeeds = "NO"
-    } else {
-        specialNeeds = "YES"
-    }
+    const paramDogData = DogData.filter(DogData => DogData.name === dogName);
 
     useEffect(()=>{ 
 
@@ -63,21 +49,21 @@ function Dog(){
 
                 <h3 className="bioDescription healthTitle">HEALTH</h3>
                 <FontAwesomeIcon icon={faBandAid} className="snIcon"/>
-                <p className="spayNeut">Spayed/Neutered: {spayedOrNeutered} </p>
+                <p className="spayNeut">Spayed/Neutered: {paramDogData[0].attributes.spayed_neutered} </p>
                 <FontAwesomeIcon icon={faSyringe} className="scIcon"/>
-                <p className="shots">Shots Current: {spayedOrNeutered} </p>
+                <p className="shots">Shots Current: {paramDogData[0].attributes.shots_current} </p>
                 <FontAwesomeIcon icon={faHandHoldingHeart} className="spcIcon"/>
-                <p className="spCare">Special Care: {specialNeeds}</p>
+                <p className="spCare">Special Care: {paramDogData[0].attributes.special_needs}</p>
 
                 <h3 className="bioDescription behaviorTitle">BEHAVIORAL CHARACTERISTICS</h3>
                 <FontAwesomeIcon icon={faHouse} className="htIcon"/>
-                <p className="houseTrained">House-Trained: </p>
+                <p className="houseTrained">House-Trained: {paramDogData[0].attributes.house_trained}</p>
                 <FontAwesomeIcon icon={faBabyCarriage} className="gkIcon"/>
-                <p className="gKids">Good with kids: </p>
+                <p className="gKids">Good with kids: {paramDogData[0].environment.children}</p>
                 <FontAwesomeIcon icon={faDog} className="gdIcon"/>
-                <p className="gDogs">Good with other dogs: </p>
+                <p className="gDogs">Good with other dogs: {paramDogData[0].environment.dogs}</p>
                 <FontAwesomeIcon icon={faCat} className="gcIcon"/>
-                <p className="gCats">Good with cats: </p>
+                <p className="gCats">Good with cats: {paramDogData[0].environment.cats}</p>
             </div>
         </div>
     )

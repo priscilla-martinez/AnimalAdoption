@@ -7,30 +7,30 @@ import { Link } from 'react-router-dom';
 
 // C A T   A P I  ----------------------------------------
 function CatAdoption() {
-    const urlCatBase = "https://api.thecatapi.com/v1/images/search?breed_ids="
-    const catBreedCode = CatData[0].breeds.urlID
-    const fullCatUrl = `${urlCatBase}${catBreedCode}`
 
-    const [catImage, setCatImage] = useState([])
+    let availableCats = CatData.map((cat,index) => {
 
-    useEffect(()=>{
-        fetch(fullCatUrl)
-        .then((response) => response.json())
-        .then((data) => setCatImage(data[0].url))
-        .catch(() => console.log("oops error"));
-    }, []);
-
-    console.log(catImage)
+        return(
+            <div className="dogAdoptionCard" key={index}>
+                <img src='https://cataas.com/cat' className="card-img-top" alt={cat.breeds.primary} />
+                <div className="card-body">
+                    <h4 className="card-title">{cat.name}</h4>
+                    <h5 className="dogBullets">{cat.gender}  •  {cat.age}  •  {cat.contact.address.city},{cat.contact.address.state}</h5>
+                    <p className="card-text">{cat.description}</p>
+                    <button type="button" class="btn btn-info">
+                        <Link to={'/cat/' + cat.name} className="viewProfileLinkCat">View profile</Link>
+                    </button>
+                </div>
+            </div>
+        )
+    })
 
     return (
-        <div className="dogAdoptionPage">
-            <h1>Cat Adoption Page</h1>
-            <h3>{CatData[0].name}</h3>
-            <h4>{CatData[0].breeds.primary}</h4>
-            <button type="button" class="btn btn-light">
-                <Link to={'/cat/' + CatData[0].name}>More Info</Link>
-            </button>
-            <img src={catImage} width="300"/>
+        <div className="catAdoptionPage">
+            <header className="catAdoptionPageHeader">
+                <h1 className="catAdoptionPageTitle">Cat Adoption Page</h1>
+            </header>
+            {availableCats}
         </div>
     )
 

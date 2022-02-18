@@ -77,7 +77,7 @@ nav{
 }
 
 .Header{
-  background-color: #229EBC;
+  background-color: #8337EB;
   height: 20vh; 
   width: 100vw;
   display: flex;
@@ -319,4 +319,31 @@ nav{
 .gCats{
   grid-column: 2/3;
   grid-row: 15/16;
+}
+
+
+
+/* --------------- C A T   A D O P T I O N --------------- */ 
+.catAdoptionPage{
+  padding-bottom: 70px;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+}
+.catAdoptionPageHeader{
+  background-color: #2FD2F2;
+  height: 10vh; 
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.catAdoptionPageTitle{
+  color: white; 
+}
+.viewProfileLinkCat{
+  color: white; 
+  justify-self: center;
+  text-decoration: none !important;
 }

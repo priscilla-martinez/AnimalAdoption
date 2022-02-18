@@ -3,16 +3,15 @@ const DogData = [
 {
     age: "Young",
     attributes: {
-        house_trained: false,
-        shots_current: true,
-        spayed_neutered: true,
-        special_needs: false
+        house_trained: "no",
+        shots_current: "yes",
+        spayed_neutered: "yes",
+        special_needs: "no"
     },
     breeds: {
         mixed: true,
         primary: "Weimaraner",
-        urlID: "weimaraner",
-        unknown: false
+        urlID: "weimaraner"
     },
     contact: {
         address: {
@@ -28,9 +27,9 @@ const DogData = [
     },
     description: "Praesent quis molestie dui, vel faucibus justo. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
     environment: {
-        cats: true,
-        children: true,
-        dogs: true 
+        cats: "yes",
+        children: "yes",
+        dogs: "yes" 
     },
     gender: "Female",
     id: 54631423,
@@ -43,10 +42,10 @@ const DogData = [
 {
     age: "Young",
     attributes: {
-        house_trained: true,
-        shots_current: true,
-        spayed_neutered: true,
-        special_needs: false
+        house_trained: "yes",
+        shots_current: "yes",
+        spayed_neutered: "yes",
+        special_needs: "no"
     },
     breeds: {
         mixed: true,
@@ -68,9 +67,9 @@ const DogData = [
     },
     description: "Donec libero nunc, condimentum sed cursus quis, auctor nec diam.",
     environment: {
-        cats: false,
-        children: false,
-        dogs: true 
+        cats: "no",
+        children: "no",
+        dogs: "yes" 
     },
     gender: "Male",
     id: 54631417,
@@ -83,10 +82,10 @@ const DogData = [
 {
     age: "Young",
     attributes: {
-        house_trained: true,
-        shots_current: true,
-        spayed_neutered: true,
-        special_needs: false
+        house_trained: "yes",
+        shots_current: "yes",
+        spayed_neutered: "yes",
+        special_needs: "yes"
     },
     breeds: {
         mixed: true,
@@ -108,9 +107,9 @@ const DogData = [
     },
     description: "Sed vulputate suscipit massa laoreet pharetra. Praesent lobortis ex eget scelerisque facilisis. Nulla non tortor pellentesque, faucibus quam in, imperdiet lectus.",
     environment: {
-        cats: true,
-        children: true,
-        dogs: true
+        cats: "yes",
+        children: "yes",
+        dogs: "yes"
     },
     gender: "Female",
     id: 54631416,
@@ -123,10 +122,10 @@ const DogData = [
 {
     age: "Baby",
     attributes: {
-        house_trained: false,
-        shots_current: true,
-        spayed_neutered: true,
-        special_needs: false
+        house_trained: "no",
+        shots_current: "yes",
+        spayed_neutered: "yes",
+        special_needs: "no"
     },
     breeds: {
         mixed: true,
@@ -148,9 +147,9 @@ const DogData = [
     },
     description: "Sed quis accumsan purus, vel dictum lorem. Fusce id dolor eleifend, viverra diam id, facilisis sapien.",
     environment: {
-        cats: false,
-        children: true,
-        dogs: false
+        cats: "no",
+        children: "yes",
+        dogs: "no"
     },
     gender: "Female",
     id: 54631415,
@@ -163,10 +162,10 @@ const DogData = [
 {
     age: "Young",
     attributes: {
-        house_trained: false,
-        shots_current: true,
-        spayed_neutered: true,
-        special_needs: false 
+        house_trained: "yes",
+        shots_current: "yes",
+        spayed_neutered: "yes",
+        special_needs: "no" 
     },
     breeds: {
         mixed: false,
@@ -188,9 +187,9 @@ const DogData = [
     },
     description: "Nullam ut elementum tortor. Praesent ut lacus risus. Nulla commodo nibh vitae elementum laoreet.",
     environment: {
-        cats: true,
-        children: false,
-        dogs: true
+        cats: "yes",
+        children: "no",
+        dogs: "yes"
     },
     gender: "Female",
     id: 54633562,
@@ -203,10 +202,10 @@ const DogData = [
 {
     age: "Adult",
     attributes: {
-        house_trained: false,
-        shots_current: true,
-        spayed_neutered: true,
-        special_needs: false
+        house_trained: "no",
+        shots_current: "yes",
+        spayed_neutered: "yes",
+        special_needs: "no"
     },
     breeds: {
         mixed: false,
@@ -228,9 +227,9 @@ const DogData = [
     },
     description: "Nam non commodo elit. Vestibulum rhoncus, neque vitae suscipit mollis, augue leo malesuada velit, sed semper mi quam sit amet risus.",
     environment: {
-        cats: true,
-        children: true,
-        dogs: true
+        cats: "yes",
+        children: "yes",
+        dogs: "yes"
     },
     gender: "Female",
     id: 54633563,
@@ -243,10 +242,10 @@ const DogData = [
 {
     age: "Adult",
     attributes: {
-        house_trained: true,
-        shots_current: false,
-        spayed_neutered: true,
-        special_needs: false
+        house_trained: "yes",
+        shots_current: "no",
+        spayed_neutered: "yes",
+        special_needs: "no"
     },
     breeds: {
         mixed: false,
@@ -268,9 +267,9 @@ const DogData = [
     },
     description: "Cras iaculis lacus non quam convallis, non dictum dolor fermentum. Sed at urna neque. Vestibulum vitae quam pellentesque, suscipit turpis vitae, varius magna.",
     environment: {
-        cats: true,
-        children: true,
-        dogs: false
+        cats: "yes",
+        children: "yes",
+        dogs: "no"
     },
     gender: "Male",
     id: 54633561,
@@ -283,10 +282,10 @@ const DogData = [
 {
     age: "Baby",
     attributes: {
-        house_trained: false,
-        shots_current: true,
-        spayed_neutered: false,
-        special_needs: false
+        house_trained: "no",
+        shots_current: "yes",
+        spayed_neutered: "no",
+        special_needs: "no"
     },
     breeds: {
         mixed: true,
@@ -308,9 +307,9 @@ const DogData = [
     },
     description: "Donec dignissim pulvinar ligula, a malesuada ex tristique et. Quisque pulvinar erat ac lectus accumsan, nec feugiat nunc auctor. Vivamus ut aliquam lorem.",
     environment: {
-        cats: true,
-        children: true,
-        dogs: true
+        cats: "yes",
+        children: "yes",
+        dogs: "yes"
     },
     gender: "Female",
     id: 54633560,
@@ -323,10 +322,10 @@ const DogData = [
 {
     age: "Baby",
     attributes: {
-        house_trained: false,
-        shots_current: true,
-        spayed_neutered: false,
-        special_needs: false
+        house_trained: "no",
+        shots_current: "yes",
+        spayed_neutered: "no",
+        special_needs: "no"
     },
     breeds: {
         mixed: true,
@@ -348,9 +347,9 @@ const DogData = [
     },
     description: "Curabitur urna neque, vulputate id finibus sit amet, pharetra id odio. Curabitur rhoncus mi eu arcu sollicitudin bibendum.",
     environment: {
-        cats: true,
-        children: false,
-        dogs: true
+        cats: "yes",
+        children: "no",
+        dogs: "yes"
     },
     gender: "Female",
     id: 54633559,
@@ -363,10 +362,10 @@ const DogData = [
 {
     age: "Senior",
     attributes: {
-        house_trained: true,
-        shots_current: true,
-        spayed_neutered: true,
-        special_needs: true
+        house_trained: "yes",
+        shots_current: "yes",
+        spayed_neutered: "yes",
+        special_needs: "yes"
     },
     breeds: {
         mixed: true,
@@ -388,9 +387,9 @@ const DogData = [
     },
     description: "Vivamus interdum consequat eros, at volutpat arcu posuere in. Curabitur quis tincidunt nisi, non placerat nulla.",
     environment: {
-        cats: true,
-        children: true,
-        dogs: false
+        cats: "yes",
+        children: "yes",
+        dogs: "no"
     },
     gender: "Male",
     id: 54633558,
