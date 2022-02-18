@@ -1,38 +1,322 @@
-.App {
-  text-align: center;
+/* --------------- I M P O R T S --------------- */ 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Pacifico&display=swap');
+ 
+* {
+  font-family: 'Comfortaa', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/* --------------- N A V   B A R --------------- */ 
+.navDiv {
+  position: fixed;
+  bottom: 0; 
+  z-index: 1000; 
+}
+nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: white;
+  border: 1px solid #DFDCE3; 
+  width: 100vw; 
+  font-family: 'Comfortaa', cursive; 
+}
+.homeIcon{ 
+  grid-column: 1/2;
+  grid-row: 1/2;
+  color:#023047;
+  justify-self: center;
+  align-self: end;
+}
+.homeLink{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  color:#023047;
+  justify-self: center;
+  text-decoration: none !important;
+}
+.dogIcon{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  color:#023047;
+  justify-self: center;
+  align-self: end;
+}
+.dogsLink{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  color:#023047;
+  justify-self: center;
+  text-decoration: none !important;
+}
+.catIcon{
+  grid-column: 3/4;
+  grid-row: 1/2;
+  color:#023047;
+  justify-self: center;
+  align-self: end;
+}
+.catsLink{
+  grid-column: 3/4;
+  grid-row: 2/3;
+  color:#023047;
+  justify-self: center;
+  text-decoration: none !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* --------------- H O M E --------------- */ 
+.homePage{
   display: flex;
+  flex-direction:column;
+  align-items: center;
+  gap: 3vh;
+  padding-bottom: 50px;
+}
+
+.Header{
+  background-color: #229EBC;
+  height: 20vh; 
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Logo{
+  font-family: 'Pacifico', cursive;
+  color: white; 
+  font-size: 12vw; 
+}
+
+.whoWeAre{
+  border-radius: 10px;
+  width: 92vw;
+  background-color: #FFB705;
+  font-family: 'Comfortaa', cursive;
+  filter: drop-shadow(0px 0px 2px #ACB5BD);
+}
+.whoWeAreTitle{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 2px;
+  font-size: 6vw;
+}
+.whoWeAreDesc{
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 4vw;
+}
+
+.petOfTheWeek{
+  position: relative;
+  border-radius: 10px;
+}
+.petOfTheWeekTitle{
+  padding-top: 20px;
+  padding-bottom: 2px;
+  font-size: 6vw;
+  color: grey; 
+}
+.powContainer{
+  background-color: white;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 5px #ACB5BD);
+}
+.petOfTheWeekImage{
+  width: 92vw;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.img_description{
+  padding: 10px;
+}
+
+
+
+/* --------------- D O G   A D O P T I O N --------------- */ 
+.dogAdoptionPage{
+  padding-bottom: 70px;
+  display: flex; 
   flex-direction: column;
   align-items: center;
+  gap: 3vh;
+}
+.dogAdoptionPageHeader{
+  background-color: #FFB705;
+  height: 10vh; 
+  width: 100vw;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.dogAdoptionPageTitle{
+  color: white; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.availableDog{
+  width: 92vw;
+  border: 3px solid lavender; 
+}
+
+.availableDogImage{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 92vw;
+}
+
+.dogAdoptionCard{
+  width: 92vw;
+  filter: drop-shadow(0px 0px 5px #ACB5BD);
+  background-color: white;
+}
+.viewProfileLink{
+  color: white; 
+  justify-self: center;
+  text-decoration: none !important;
+}
+.dogBullets{
+  font-size: 15px;
+  color: #485056
+}
+.card-text{
+  font-size: 12px;
+}
+
+
+/* --------------- D O G --------------- */
+.individualDogPage{
+  padding-bottom: 70px;
+}
+.dogName{
+  background-color:#FFB705;
+  color:white; 
+  height: 10vh; 
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Pacifico', cursive;
+  font-size:xx-large;
+}
+.dogImage{
+  width: 100vw;
+}
+
+.dogBio{
+  display: grid; 
+  grid-template-columns: 10% 90%;
+  grid-template-rows: repeat(15, 0.5fr);
+}
+.bioDescription{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size:large;
+}
+.dogBio p{
+  font-size: medium; 
+}
+
+/* BREED -------*/
+.breedTitle{
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.breedIcon{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: center;
+}
+.breed{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+/* PHYSICAL CHARACTERISTICS -------*/
+.pcTitle{
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+.sizeIcon{
+  justify-self: center;
+}
+.genderIcon{
+  justify-self: center;
+}
+.ageIcon{
+  justify-self: center;
+}
+
+/* HEALTH -------*/
+.snIcon{
+  grid-column: 1/2;
+  grid-row: 8/9;
+  justify-self: center;
+}
+.spayNeut{
+  grid-column: 2/3;
+  grid-row: 8/9;
+}
+.scIcon{
+  grid-column: 1/2;
+  grid-row: 9/10;
+  justify-self: center;
+}
+.shots{
+  grid-column: 2/3;
+  grid-row: 9/10;
+}
+.spcIcon{
+  grid-column: 1/2;
+  grid-row: 10/11;
+  justify-self: center;
+}
+.spCare{
+  grid-column: 2/3;
+  grid-row: 10/11;
+}
+
+/* BEHAVIORAL CHARACTERISTICS -------*/
+.behaviorTitle{
+  grid-column: 1/3;
+  grid-row: 11/12;
+}
+.htIcon{
+  grid-column: 1/2;
+  grid-row: 12/13;
+  justify-self: center;
+}
+.houseTrained{
+  grid-column: 2/3;
+  grid-row: 12/13;
+}
+.gkIcon{
+  grid-column: 1/2;
+  grid-row: 13/14;
+  justify-self: center;
+}
+.gKids{
+  grid-column: 2/3;
+  grid-row: 13/14;
+}
+.gdIcon{
+  grid-column: 1/2;
+  grid-row: 14/15;
+  justify-self: center;
+}
+.gDogs{
+  grid-column: 2/3;
+  grid-row: 14/15;
+}
+.gcIcon{
+  grid-column: 1/2;
+  grid-row: 15/16;
+  justify-self: center;
+}
+.gCats{
+  grid-column: 2/3;
+  grid-row: 15/16;
 }

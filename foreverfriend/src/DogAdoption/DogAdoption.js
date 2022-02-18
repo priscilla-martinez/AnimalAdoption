@@ -3,37 +3,49 @@ import DogData from '../DogData'
 import {useState, useEffect} from 'react'
 import 'bootstrap'
 import * as bootstrap from 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 
 function DogAdoption() {
 
-    // D O G   A P I  ----------------------------------------
-  const urlDogBase = "https://dog.ceo/api/breed/"
-  const urlEnding = "/images/random"
-  const dogUrl = DogData[3].breeds.urlID
-  const fullUrl = `${urlDogBase}${dogUrl}${urlEnding}`
+    const [dogImages, setDogImages] = useState({})
 
-  const [dogImage, setDogImage] = useState({})
+    useEffect(()=>{ 
+        const dogsUrl = 'https://dog.ceo/api/breeds/image/random/10'
 
-  useEffect(()=>{ 
-      fetch(fullUrl)
-        .then((response) => response.json())
-        .then((data) => setDogImage(data.message))
-        .catch(() => console.log("oops error"));
+        fetch(dogsUrl)
+          .then((response) => response.json())
+          .then((data) => setDogImages(data.message))
+          .catch(() => console.log("oops error"));
+      }, []);
 
-        console.log(dogImage)
-    }, []);
+      console.log("dogImages: ",dogImages)
+
+    let availableDogs = DogData.map((dog,index) => {
+
+        return(
+            <div className="dogAdoptionCard" key={index}>
+                <img src={dogImages[index]} className="card-img-top" alt={dog.breeds.primary} />
+                <div className="card-body">
+                    <h4 className="card-title">{dog.name}</h4>
+                    <h5 className="dogBullets">{dog.gender}  •  {dog.age}  •  {dog.contact.address.city},{dog.contact.address.state}</h5>
+                    <p className="card-text">{dog.description}</p>
+                    <button type="button" className="btn btn-warning">
+                        <Link to={'/dog/' + dog.name} className="viewProfileLink">View profile</Link>
+                    </button>
+                </div>
+            </div>
+        )
+    })
 
     return(
-        <>
-            <h1>Dog Adoption Page</h1>
-            <h2>{DogData[3].name}</h2>
-            <h3>{DogData[3].breeds.primary}</h3>
-            <button type="button" class="btn btn-light">
-                <Link to={'/dog/' + DogData[0].name}>More Info</Link>
-            </button>            
-            <img src={dogImage} />
-        </>
+        <div className="dogAdoptionPage">
+            <header className="dogAdoptionPageHeader">
+                <h1 className="dogAdoptionPageTitle">Dog Adoption Page</h1>
+            </header>
+
+            {availableDogs}
+        </div>
     )
 
 }

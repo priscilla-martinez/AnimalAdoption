@@ -10,8 +10,8 @@ const DogData = [
     },
     breeds: {
         mixed: true,
-        primary: "Airedale",
-        urlID: "airedale",
+        primary: "Weimaraner",
+        urlID: "weimaraner",
         unknown: false
     },
     contact: {
@@ -130,8 +130,8 @@ const DogData = [
     },
     breeds: {
         mixed: true,
-        primary: "Boston Bulldog",
-        urlID: "bulldog/boston",
+        primary: "Weimaraner",
+        urlID: "weimaraner",
         unknown: false
     },
     contact: {
@@ -170,8 +170,8 @@ const DogData = [
     },
     breeds: {
         mixed: false,
-        primary: "Mix",
-        urlID: "mix",
+        primary: "Whippet",
+        urlID: "whippet",
         unknown: true 
     },
     contact: {
@@ -210,8 +210,8 @@ const DogData = [
     },
     breeds: {
         mixed: false,
-        primary: "English Bulldog",
-        urlID: "bulldog/english",
+        primary: "Whippet",
+        urlID: "whippet",
         unknown: false
     },
     contact: {
@@ -250,8 +250,8 @@ const DogData = [
     },
     breeds: {
         mixed: false,
-        primary: "Fox Terrier",
-        urlID: "terrier/fox",
+        primary: "Shiba Inu",
+        urlID: "shiba",
         unknown: false
     },
     contact: {
@@ -330,8 +330,8 @@ const DogData = [
     },
     breeds: {
         mixed: true,
-        primary: "Australian Shepherd",
-        urlID: "australian/shepherd",
+        primary: "Shiba Inu",
+        urlID: "shiba",
         unknown: false
     },
     contact: {
@@ -370,8 +370,8 @@ const DogData = [
     },
     breeds: {
         mixed: true,
-        primary: "Chihuahua",
-        urlID: "chihuahua",
+        primary: "Boxer",
+        urlID: "boxer",
         unknown: false
     },
     contact: {

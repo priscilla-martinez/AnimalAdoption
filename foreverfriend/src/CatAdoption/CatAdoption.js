@@ -23,7 +23,7 @@ function CatAdoption() {
     console.log(catImage)
 
     return (
-        <>
+        <div className="dogAdoptionPage">
             <h1>Cat Adoption Page</h1>
             <h3>{CatData[0].name}</h3>
             <h4>{CatData[0].breeds.primary}</h4>
@@ -31,7 +31,7 @@ function CatAdoption() {
                 <Link to={'/cat/' + CatData[0].name}>More Info</Link>
             </button>
             <img src={catImage} width="300"/>
-        </>
+        </div>
     )
 
 }

@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.css';
 import 'bootstrap'
 import * as bootstrap from 'bootstrap';
@@ -9,17 +10,43 @@ import Dog from './Dog/Dog'
 import CatAdoption from './CatAdoption/CatAdoption'
 import Cat from './Cat/Cat'
 import Home from './Home/Home'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHouseChimney, faDog, faCat } from '@fortawesome/free-solid-svg-icons'
+
+
 
 
 function App() {
 
 
   return (
-    <div>
-      <h1>Forever Friend</h1>
-      <Link to="/">Home</Link>
-      <Link to="/dogadoption">Dog Adoption</Link> 
-      <Link to="/catadoption">Cat Adoption</Link>
+    <div className="appDiv">
+      
+      <div className="navDiv">
+        <nav>
+          <FontAwesomeIcon 
+            icon={faHouseChimney}
+            className="homeIcon"/>
+          <Link 
+            to="/"
+            className="homeLink">Home</Link>
+          <FontAwesomeIcon 
+            icon={faDog}
+            className="dogIcon">
+            <Link to="/dogadoption"></Link>
+            </FontAwesomeIcon>
+          <Link 
+            to="/dogadoption"
+            className="dogsLink">Dogs</Link> 
+          <FontAwesomeIcon 
+            icon={faCat}
+            className="catIcon"/>
+          <Link 
+            to="/catadoption"
+            className="catsLink">Cats</Link>
+        </nav>
+      </div>
+  
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
