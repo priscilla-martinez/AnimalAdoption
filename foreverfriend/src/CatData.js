@@ -3,11 +3,11 @@ const CatData = [
     {
         age: "Baby",
         attributes: {
-            declawed: false,
-            house_trained: false,
-            shots_current: false,
-            spayed_neutured: false,
-            special_needs: false
+            declawed: "no",
+            house_trained: "no",
+            shots_current: "no",
+            spayed_neutured: "no",
+            special_needs: "no"
         }, 
         breeds: {
             mixed: false,
@@ -28,9 +28,9 @@ const CatData = [
             phone: "239-252-7387"
         }, 
         environment: {
-            cats: "Unkown",
+            cats: "no",
             children: "Unkown",
-            dogs: "Unkown"
+            dogs: "no"
         }, 
         gender: "Male", 
         id: 54629306,
@@ -44,11 +44,11 @@ const CatData = [
     {
         age: "Young",
         attributes: {
-            declawed: false,
-            house_trained: false,
-            shots_current: false,
-            spayed_neutured: false,
-            special_needs: false
+            declawed: "no",
+            house_trained: "yes",
+            shots_current: "yes",
+            spayed_neutured: "no",
+            special_needs: "no"
         }, 
         breeds: {
             mixed: false, 
@@ -69,9 +69,9 @@ const CatData = [
             phone: "951-358-7387"
         }, 
         environment: {
-            cats: "Unkown",
-            children: "Unkown",
-            dogs: "Unkown"
+            cats: "yes",
+            children: "yes",
+            dogs: "yes"
         }, 
         gender: "Female", 
         id: 54629297,
@@ -85,11 +85,11 @@ const CatData = [
     {
         age: "Adult",
         attributes: {
-            declawed: false,
-            house_trained: false,
-            shots_current: false,
-            spayed_neutured: true,
-            special_needs: false
+            declawed: "no",
+            house_trained: "yes",
+            shots_current: "yes",
+            spayed_neutured: "yes",
+            special_needs: "no"
         }, 
         breeds: {
             mixed: false, 
@@ -110,9 +110,9 @@ const CatData = [
             phone: "314-951-1562"
         }, 
         environment: {
-            cats: "unkown",
-            children: "unkown",
-            dogs: "unkown",
+            cats: "no",
+            children: "no",
+            dogs: "no",
         }, 
         gender: "Male", 
         id: 54629290,
@@ -126,11 +126,11 @@ const CatData = [
     {
         age: "Young",
         attributes: {
-            declawed: false,
-            house_trained: false,
-            shots_current: true,
-            spayed_neutured: false,
-            special_needs: false 
+            declawed: "no",
+            house_trained: "yes",
+            shots_current: "yes",
+            spayed_neutured: "yes",
+            special_needs: "no" 
         }, 
         breeds: {
             mixed: false, 
@@ -151,9 +151,9 @@ const CatData = [
             phone:"314-951-1562"
         }, 
         environment: {
-            cats: true,
-            children: true,
-            dogs: false,
+            cats: "no",
+            children: "no",
+            dogs: "yes",
         }, 
         gender: "Male", 
         id: 54629292,
@@ -167,11 +167,11 @@ const CatData = [
     {
         age: "Young",
         attributes: {
-            declawed: false,
-            house_trained: false,
-            shots_current: false,
-            spayed_neutured: true,
-            special_needs: false
+            declawed: "yes",
+            house_trained: "yes",
+            shots_current: "yes",
+            spayed_neutured: "yes",
+            special_needs: "no"
         }, 
         breeds: {
             mixed: false, 
@@ -192,9 +192,9 @@ const CatData = [
             phone: "(314) 951-1562"
         }, 
         environment: {
-            cats: true,
-            children: true,
-            dogs: true,
+            cats: "no",
+            children: "no",
+            dogs: "no",
         }, 
         gender: "Female", 
         id: 54629293,
@@ -208,11 +208,11 @@ const CatData = [
     {
         age: "Young",
         attributes: {
-            declawed: false,
-            house_trained: false,
-            shots_current: false,
-            spayed_neutured: true,
-            special_needs: false
+            declawed: "yes",
+            house_trained: "yes",
+            shots_current: "yes",
+            spayed_neutured: "yes",
+            special_needs: "no"
         }, 
         breeds: {
             mixed: false, 
@@ -233,9 +233,9 @@ const CatData = [
             phone: "(314) 951-1562"
         }, 
         environment: {
-            cats: false,
-            children: true,
-            dogs: true,
+            cats: "yes",
+            children: "yes",
+            dogs: "yes",
         }, 
         gender: "Female", 
         id: 54629295,
@@ -249,11 +249,11 @@ const CatData = [
     {
         age: "Adult",
         attributes: {
-            declawed: false,
-            house_trained: false,
-            shots_current: true,
-            spayed_neutured: true,
-            special_needs: false
+            declawed: "yes",
+            house_trained: "yes",
+            shots_current: "yes",
+            spayed_neutured: "yes",
+            special_needs: "no"
         }, 
         breeds: {
             mixed: false, 
@@ -274,9 +274,9 @@ const CatData = [
             phone: "(410) 848-4810"
         }, 
         environment: {
-            cats: true,
-            children: false,
-            dogs: true,
+            cats: "no",
+            children: "no",
+            dogs: "yes",
         }, 
         gender: "Female", 
         id: 54629283,
@@ -290,11 +290,11 @@ const CatData = [
     {
         age: "Senior",
         attributes: {
-            declawed: true,
-            house_trained: true,
-            shots_current: true,
-            spayed_neutured: true,
-            special_needs: false 
+            declawed: "no",
+            house_trained: "yes",
+            shots_current: "yes",
+            spayed_neutured: "yes",
+            special_needs: "no" 
         }, 
         breeds: {
             mixed: false, 
@@ -315,9 +315,9 @@ const CatData = [
             phone: "(702) 267-4970"
         }, 
         environment: {
-            cats: false,
-            children: false,
-            dogs: false,
+            cats: "yes",
+            children: "no",
+            dogs: "no",
         }, 
         gender: "Male", 
         id: 54629280,
@@ -331,11 +331,11 @@ const CatData = [
     {
         age: "Baby",
         attributes: {
-            declawed: false,
-            house_trained: false,
-            shots_current: false,
-            spayed_neutured: true,
-            special_needs: false
+            declawed: "no",
+            house_trained: "yes",
+            shots_current: "yes",
+            spayed_neutured: "yes",
+            special_needs: "no"
         }, 
         breeds: {
             mixed: false, 
@@ -356,9 +356,9 @@ const CatData = [
             phone: "913-971-6362"
         }, 
         environment: {
-            cats: false,
-            children: false,
-            dogs: false,
+            cats: "yes",
+            children: "no",
+            dogs: "yes",
         }, 
         gender: "Male", 
         id: 54629281,
@@ -372,11 +372,11 @@ const CatData = [
     {
         age: "Young",
         attributes: {
-            declawed: true,
-            house_trained: true,
-            shots_current: true,
-            spayed_neutured: true,
-            special_needs: false
+            declawed: "yes",
+            house_trained: "yes",
+            shots_current: "yes",
+            spayed_neutured: "yes",
+            special_needs: "no"
         }, 
         breeds: {
             mixed: true, 
@@ -397,9 +397,9 @@ const CatData = [
             phone: "561-686-3663"
         }, 
         environment: {
-            cats: true,
-            children: true,
-            dogs: false,
+            cats: "yes",
+            children: "yes",
+            dogs: "no",
         }, 
         gender: "Female", 
         id: 54629274 ,

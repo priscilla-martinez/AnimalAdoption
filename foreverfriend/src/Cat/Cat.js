@@ -48,7 +48,7 @@ function Cat(){
 
                 <h3 className="bioDescription healthTitle">HEALTH</h3>
                 <FontAwesomeIcon icon={faBandAid} className="snIcon"/>
-                <p className="spayNeut">Spayed/Neutered: {paramCatData[0].attributes.spayed_neutered} </p>
+                <p className="spayNeut">Spayed/Neutered: {paramCatData[0].attributes.spayed_neutured} </p>
                 <FontAwesomeIcon icon={faSyringe} className="scIcon"/>
                 <p className="shots">Shots Current: {paramCatData[0].attributes.shots_current} </p>
                 <FontAwesomeIcon icon={faHandHoldingHeart} className="spcIcon"/>
@@ -68,33 +68,5 @@ function Cat(){
     )
 }
 
-
-
-
-
-
-
-
-
-/*
-
-    const paramCatData = CatData.filter(CatData => CatData.name === catName).map(data => {
-        return(
-            <>
-                <h1>{data.name}</h1>
-                <h2>{data.breeds.primary}</h2>
-                <h3>{data.description}</h3>
-            </>
-        );
-    })
-
-    return(
-        <>
-            <h1>Individual Cat Page</h1>
-            {paramCatData}
-        </>
-    )
-}
-*/
 
 export default Cat
