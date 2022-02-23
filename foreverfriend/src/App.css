@@ -210,6 +210,7 @@ nav{
   display: grid; 
   grid-template-columns: 10% 90%;
   grid-template-rows: repeat(15, 0.5fr);
+  padding-left: 10px;
 }
 .bioDescription{
   padding-top: 20px;
