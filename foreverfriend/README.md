@@ -11,7 +11,7 @@ Use this section to describe your final project and perhaps any links to relevan
 
 ## API
 
-- Dog API: The internet's biggest collection of open source dog pictures. For Dog Adoption page, the API returns: 
+**Dog API**: The internet's biggest collection of open source dog pictures. For Dog Adoption page, the API returns: 
 
 ```
 {
