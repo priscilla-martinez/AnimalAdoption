@@ -141,14 +141,15 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ```
 const paramDogData = DogData.filter(DogData => DogData.name === dogName);
-    useEffect(()=>{ 
-        const urlDogBase = "https://dog.ceo/api/breed/"
-        const urlEnding = "/images/random"
-        const dogUrl = paramDogData[0].breeds.urlID
-        const fullUrl = `${urlDogBase}${dogUrl}${urlEnding}`
-        fetch(fullUrl)
-          .then((response) => response.json())
-          .then((data) => setDogImage(data.message))
-          .catch(() => console.log("oops error"));
-    }, []); 
+
+useEffect(()=>{ 
+    const urlDogBase = "https://dog.ceo/api/breed/"
+    const urlEnding = "/images/random"
+    const dogUrl = paramDogData[0].breeds.urlID
+    const fullUrl = `${urlDogBase}${dogUrl}${urlEnding}`
+    fetch(fullUrl)
+        .then((response) => response.json())
+        .then((data) => setDogImage(data.message))
+        .catch(() => console.log("oops error"));
+}, []); 
 ```
