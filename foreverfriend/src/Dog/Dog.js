@@ -11,15 +11,14 @@ function Dog(){
     const [dogImage, setDogImage] = useState("")
 
     const paramDogData = DogData.filter(DogData => DogData.name === dogName);
-
+    
     useEffect(()=>{ 
-
+        
         const urlDogBase = "https://dog.ceo/api/breed/"
         const urlEnding = "/images/random"
         const dogUrl = paramDogData[0].breeds.urlID
-
         const fullUrl = `${urlDogBase}${dogUrl}${urlEnding}`
-
+        
         fetch(fullUrl)
           .then((response) => response.json())
           .then((data) => setDogImage(data.message))

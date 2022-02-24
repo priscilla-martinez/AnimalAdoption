@@ -11,8 +11,7 @@ Use this section to describe your final project and perhaps any links to relevan
 
 ## API
 
-**Dog API**
-The internet's biggest collection of open source dog pictures. For Dog Adoption page, the API returns: 
+**Dog API**: The internet's biggest collection of open source dog pictures. For Dog Adoption page, the API returns: 
 
 ```
 {
@@ -32,8 +31,7 @@ For the individual dog profile, it returns:
 }
 ```
 
-**Cat API**
-A public service API all about Cats, free to use when making your fancy new App, Website or Service. For teh individual cat profile,API returns: 
+**Cat API**: A public service API all about Cats, free to use when making your fancy new App, Website or Service. For teh individual cat profile,API returns: 
 ```
 [
     {
@@ -98,18 +96,22 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 - [add link to your react architecture]()
 
 
-### MVP/PostMVP - 5min
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+### MVP/PostMVP - 5min 
 
 #### MVP EXAMPLE
 - Find and use external api 
-- Render data on page 
-- Allow user to interact with the page
+- Home Page 
+- Display 10 dogs on Dog Adoption Page
+- Clickable profile for individual dog
+- Display 10 cats on Cat Adoption Page
+- Clickable profile for individual cat
 
 #### PostMVP EXAMPLE
 
 - Add localStorage or firebase for storage
+- More Home Page items 
+- Contact for each animal 
+- Contact for general questions 
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
@@ -136,10 +138,17 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+const paramDogData = DogData.filter(DogData => DogData.name === dogName);
+    useEffect(()=>{ 
+        const urlDogBase = "https://dog.ceo/api/breed/"
+        const urlEnding = "/images/random"
+        const dogUrl = paramDogData[0].breeds.urlID
+        const fullUrl = `${urlDogBase}${dogUrl}${urlEnding}`
+        fetch(fullUrl)
+          .then((response) => response.json())
+          .then((data) => setDogImage(data.message))
+          .catch(() => console.log("oops error"));
+    }, []); 
 ```
