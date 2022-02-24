@@ -3,7 +3,7 @@
 ## Project Links
 
 - [GitHub](https://github.com/priscilla-martinez/AnimalAdoption/tree/main/foreverfriend)
-- [add your deployment link]()
+- [Deployement Link](https://priscilla-martinez.github.io/AnimalAdoption/)
 
 ## Project Description
 
@@ -11,11 +11,24 @@ Use this section to describe your final project and perhaps any links to relevan
 
 ## API
 
-Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
-
+- Dog API: The internet's biggest collection of open source dog pictures. For Dog Adoption page, the API returns: 
 
 ```
-{data: {} }
+{
+    "message": [
+        "https://images.dog.ceo/breeds/terrier-irish/n02093991_3838.jpg",
+        "https://images.dog.ceo/breeds/pekinese/n02086079_4412.jpg",
+        "https://images.dog.ceo/breeds/malinois/n02105162_5706.jpg"
+    ],
+    "status": "success"
+}
+```
+For the individual dog profile, it returns: 
+```
+{
+    "message": "https://images.dog.ceo/breeds/hound-ibizan/n02091244_2118.jpg",
+    "status": "success"
+}
 ```
 
 
