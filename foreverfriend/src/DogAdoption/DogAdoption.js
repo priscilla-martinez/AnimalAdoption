@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 function DogAdoption() {
 
     const [dogImages, setDogImages] = useState({})
+    const [breed, setBreed] = useState("")
 
     useEffect(()=>{ 
         const dogsUrl = 'https://dog.ceo/api/breeds/image/random/10'
@@ -17,7 +18,7 @@ function DogAdoption() {
           .then((response) => response.json())
           .then((data) => setDogImages(data.message))
           .catch(() => console.log("oops error"));
-      }, []);
+      }, [dogImages]);
 
       console.log("dogImages: ",dogImages)
 
